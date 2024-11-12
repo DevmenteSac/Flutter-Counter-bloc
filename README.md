@@ -1,16 +1,71 @@
-# flutter_counter
+# Flutter Counter con flutter bloc (cubit)
 
-A new Flutter project.
+En este proyecto se crea un counter simple con la libreria flutter_bloc para gestionar el estado siguiendo la arquitectura BLoC.
 
-## Getting Started
+![Screen Counter](https://bloclibrary.dev/_astro/flutter-counter.B_w0ovsj_1isDyF.webp)
 
-This project is a starting point for a Flutter application.
+## Temas clave
+- BlocObserver.
+- BlocProvider, widget de Flutter que proporciona un bloc a sus hijos.
+- BlocBuilder, widget de Flutter que maneja la construcción del widget en respuesta a nuevos estados.
+- Cubit
+- Agregar eventos con context.read.
 
-A few resources to get you started if this is your first Flutter project:
+## Configuracion
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^8.1.6
+```
+## Estructura del Proyecto
+La aplicación utiliza una estructura de directorio basada en funciones. Esta estructura de proyecto nos permite escalar el proyecto al contar con funciones independientes.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```plaintext
+├── lib
+│   ├── app.dart
+│   ├── counter
+│   │   ├── counter.dart
+│   │   ├── cubit
+│   │   │   └── counter_cubit.dart
+│   │   └── view
+│   │       ├── counter_page.dart
+│   │       ├── counter_view.dart
+│   │       └── view.dart
+│   ├── counter_observer.dart
+│   └── main.dart
+├── pubspec.lock
+├── pubspec.yaml
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Instalación
+Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/DevmenteSac/Flutter-Counter-bloc.git
+    ```
+
+2. Navega al directorio:
+
+    ```bash
+    cd Flutter-Counter-bloc
+    ```
+
+3. Instala las dependencias:
+
+    ```bash
+    flutter pub get
+    ```
+
+4. Ejecuta la aplicación:
+
+    ```bash
+    flutter run
+    ```
+
+## Contacto
+Devmente Sac - [devmentesacontacto@gmail.com](mailto:devmentesacontacto@gmail.com)  
+GitHub: [DevmenteSac](https://github.com/DevmenteSac)
